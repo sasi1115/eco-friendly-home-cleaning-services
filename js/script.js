@@ -1,0 +1,1 @@
+console.log("EcoSpark Website Loaded Successfully");
