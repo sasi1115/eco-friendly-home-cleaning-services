@@ -1,0 +1,625 @@
+/* =========================================================
+   START: SERVICES HERO SECTION
+========================================================= */
+
+.services-hero{
+    position: relative;
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-overlay{
+    position: absolute;
+    inset: 0;
+}
+
+.services-hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: auto;
+    color: white;
+}
+
+.hero-tag{
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+
+    padding: 12px 22px;
+    border-radius: 50px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    margin-bottom: 28px;
+}
+
+.services-hero-content h1{
+    font-size: 4.2rem;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.services-hero-content p{
+    font-size: 1.08rem;
+    line-height: 1.9;
+    max-width: 680px;
+    margin: auto auto 38px;
+    color: rgba(255,255,255,0.88);
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* ========================= HERO BUTTON VISIBILITY FIX ========================= */
+
+.services-hero .btn-secondary{
+
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+
+}
+
+.services-hero .btn-secondary:hover{
+
+    background: white;
+    color: var(--primary-color);
+
+}
+
+/* =========================================================
+   END: SERVICES HERO SECTION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: SERVICES SECTION
+========================================================= */
+
+.services-section{
+    background: var(--light-bg);
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 32px;
+}
+
+.service-card{
+    background: var(--light-card);
+    border-radius: 28px;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark-mode .service-card{
+    background: var(--dark-card);
+}
+
+.service-card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.service-image{
+    overflow: hidden;
+}
+
+.service-image img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img{
+    transform: scale(1.08);
+}
+
+.service-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.service-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.service-content p{
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.service-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.service-content ul li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.service-content ul li i{
+    color: var(--primary-color);
+}
+
+.service-btn{
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    background: var(--primary-color);
+    color: white;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.service-btn:hover{
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   END: SERVICES SECTION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: WHY CHOOSE US
+========================================================= */
+
+.why-services{
+    background: var(--light-card);
+}
+
+body.dark-mode .why-services{
+    background: var(--dark-card);
+}
+
+.why-grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 30px;
+}
+
+.why-card{
+    background: white;
+    padding: 40px 30px;
+    border-radius: 24px;
+    text-align: center;
+
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+body.dark-mode .why-card{
+    background: #111827;
+}
+
+.why-card:hover{
+    transform: translateY(-10px);
+}
+
+.why-card i{
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.why-card h3{
+    font-size: 1.2rem;
+}
+
+/* =========================================================
+   END: WHY CHOOSE US
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: PROCESS SECTION
+========================================================= */
+
+.process-grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 30px;
+}
+
+.process-card{
+    background: var(--light-card);
+    padding: 40px 30px;
+    border-radius: 24px;
+    text-align: center;
+
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+body.dark-mode .process-card{
+    background: var(--dark-card);
+}
+
+.process-card:hover{
+    transform: translateY(-10px);
+}
+
+.process-card span{
+    width: 75px;
+    height: 75px;
+
+    margin: auto auto 25px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.process-card h3{
+    margin-bottom: 16px;
+}
+
+.process-card p{
+    line-height: 1.8;
+}
+
+/* =========================================================
+   END: PROCESS SECTION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: FAQ SECTION
+========================================================= */
+
+.faq-section{
+    background: var(--light-card);
+}
+
+body.dark-mode .faq-section{
+    background: var(--dark-card);
+}
+
+.faq-container{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.faq-item{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+body.dark-mode .faq-item{
+    background: #111827;
+}
+
+.faq-question{
+    width: 100%;
+    padding: 24px 28px;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    color: inherit;
+}
+
+.faq-question i{
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-question i{
+    transform: rotate(45deg);
+}
+
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+
+    transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+}
+
+.faq-answer p{
+
+    padding: 0 28px 24px;
+    line-height: 1.8;
+
+    color: var(--light-text);
+
+}
+
+body.dark-mode .faq-answer p{
+
+    color: var(--dark-text);
+
+}
+/* =========================================================
+   END: FAQ SECTION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: CTA SECTION
+========================================================= */
+
+.services-cta{
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.services-cta h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.services-cta p{
+    max-width: 700px;
+    margin: auto auto 35px;
+    line-height: 1.8;
+}
+
+.cta-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* =========================================================
+   END: CTA SECTION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: REVEAL ANIMATION
+========================================================= */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 0.9s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   END: REVEAL ANIMATION
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: LARGE LAPTOP RESPONSIVE
+========================================================= */
+
+@media(max-width: 1200px){
+
+    .services-hero-content h1{
+        font-size: 3.7rem;
+    }
+
+    .services-grid{
+        gap: 28px;
+    }
+
+}
+
+/* =========================================================
+   END: LARGE LAPTOP RESPONSIVE
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: TABLET RESPONSIVE
+========================================================= */
+
+@media(max-width: 992px){
+
+    .services-hero{
+        min-height: 70vh;
+    }
+
+    .services-hero-content h1{
+        font-size: 3rem;
+    }
+
+    .services-grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .why-grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .process-grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+}
+
+/* =========================================================
+   END: TABLET RESPONSIVE
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: MOBILE RESPONSIVE
+========================================================= */
+
+@media(max-width: 768px){
+
+    .services-hero{
+        min-height: 65vh;
+        padding: 120px 0 90px;
+    }
+
+    .services-hero-content h1{
+        font-size: 2.4rem;
+    }
+
+    .services-hero-content p{
+        font-size: 1rem;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn{
+        width: 100%;
+    }
+
+    .services-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .services-cta h2{
+        font-size: 2.2rem;
+    }
+
+    .cta-buttons{
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn{
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   END: MOBILE RESPONSIVE
+========================================================= */
+
+
+
+
+/* =========================================================
+   START: SMALL MOBILE RESPONSIVE
+========================================================= */
+
+@media(max-width: 576px){
+
+    .services-hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-tag{
+        font-size: 0.85rem;
+        padding: 10px 18px;
+    }
+
+    .service-content{
+        padding: 24px;
+    }
+
+    .service-image img{
+        height: 220px;
+    }
+
+    .faq-question{
+        font-size: 0.95rem;
+        padding: 20px;
+    }
+
+    .faq-answer p{
+        padding: 0 20px 20px;
+    }
+
+}
+
+/* =========================================================
+   END: SMALL MOBILE RESPONSIVE
+========================================================= */
