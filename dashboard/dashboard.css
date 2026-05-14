@@ -1,0 +1,940 @@
+/* ========================= GLOBAL RESET ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ========================= BODY ========================= */
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: #f5f7f6;
+    color: #111827;
+}
+
+
+
+/* ========================= DASHBOARD WRAPPER ========================= */
+
+.dashboard-wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+/* ========================= SIDEBAR ========================= */
+
+.sidebar{
+    width: 280px;
+    height: 100vh;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5e7eb;
+
+    padding: 24px;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ========================= SIDEBAR LOGO ========================= */
+
+.sidebar-logo{
+    margin-bottom: 40px;
+}
+
+.sidebar-logo a{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    text-decoration: none;
+}
+
+
+
+/* ========================= LOGO ICON ========================= */
+
+.logo-icon{
+    width: 55px;
+    height: 55px;
+
+    border-radius: 16px;
+
+    background: #16a34a;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+
+
+/* ========================= LOGO TEXT ========================= */
+
+.sidebar-logo span{
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #16a34a;
+}
+
+
+
+/* ========================= SIDEBAR MENU ========================= */
+
+.sidebar-menu{
+    list-style: none;
+
+    flex: 1;
+}
+
+
+
+/* ========================= SIDEBAR MENU ITEM ========================= */
+
+.sidebar-menu li{
+    margin-bottom: 14px;
+}
+
+
+
+/* ========================= SIDEBAR MENU LINK ========================= */
+
+.sidebar-menu a{
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 18px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    color: #374151;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+
+/* ========================= SIDEBAR ACTIVE ========================= */
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active{
+    background: #16a34a;
+    color: #ffffff;
+}
+
+
+
+/* ========================= LOGOUT BUTTON ========================= */
+
+.logout-link{
+    background: #dcfce7;
+    color: #16a34a !important;
+}
+
+.logout-link:hover{
+    background: #16a34a !important;
+    color: #ffffff !important;
+}
+
+
+
+/* ========================= SIDEBAR BOTTOM ========================= */
+
+.sidebar-bottom{
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.sidebar-bottom h4{
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+.sidebar-bottom p{
+    color: #6b7280;
+
+    line-height: 1.7;
+}
+
+
+
+/* ========================= MAIN CONTENT ========================= */
+
+.main-content{
+    flex: 1;
+
+    margin-left: 280px;
+
+    padding: 40px;
+}
+
+
+
+/* ========================= TOP HEADER ========================= */
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* ========================= HEADER LEFT ========================= */
+
+.header-left h1{
+    font-size: 34px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #111827;
+}
+
+.header-left span{
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #16a34a;
+}
+
+
+
+/* ========================= HEADER RIGHT ========================= */
+
+.header-right{
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+
+/* ========================= SEARCH BOX ========================= */
+
+.search-box{
+    background: #ffffff;
+
+    padding: 14px 18px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 300px;
+}
+
+.search-box input{
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+
+
+/* ========================= HEADER BUTTON ========================= */
+
+.header-btn,
+.notification-btn{
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.header-btn:hover,
+.notification-btn:hover{
+    background: #16a34a;
+    color: #ffffff;
+}
+
+
+
+/* ========================= PROFILE BOX ========================= */
+
+.profile-box{
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    background: #ffffff;
+
+    padding: 10px 16px;
+
+    border-radius: 16px;
+}
+
+.profile-box img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.profile-box h4{
+    font-size: 16px;
+}
+
+.profile-box span{
+    color: #16a34a;
+
+    font-size: 14px;
+}
+
+
+
+/* ========================= HERO SECTION ========================= */
+
+.dashboard-hero{
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+
+    border-radius: 30px;
+
+    padding: 50px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 420px;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* ========================= HERO CONTENT ========================= */
+
+.hero-content span{
+    color: #dcfce7;
+
+    font-weight: 600;
+}
+
+.hero-content h2{
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+
+    margin: 20px 0;
+}
+
+.hero-content p{
+    color: #ecfdf5;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+}
+
+
+
+/* ========================= HERO BUTTONS ========================= */
+
+.hero-buttons{
+    display: flex;
+
+    gap: 16px;
+
+    margin-top: 35px;
+}
+
+.hero-buttons a{
+    text-decoration: none;
+
+    padding: 16px 28px;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    color: #16a34a;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.hero-buttons a:hover{
+    transform: translateY(-4px);
+}
+
+.secondary-btn{
+    background: transparent !important;
+
+    border: 2px solid #ffffff;
+
+    color: #ffffff !important;
+}
+
+
+
+/* ========================= HERO IMAGE ========================= */
+
+.hero-image img{
+    width: 100%;
+
+    border-radius: 24px;
+}
+
+
+
+/* ========================= STATS GRID ========================= */
+
+.stats-grid{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* ========================= STAT CARD ========================= */
+
+.stat-card{
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.stat-card:hover{
+    transform: translateY(-6px);
+}
+
+.stat-card i{
+    font-size: 32px;
+
+    color: #16a34a;
+
+    margin-bottom: 18px;
+}
+
+.stat-card h3{
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.stat-card p{
+    color: #6b7280;
+}
+
+
+
+/* ========================= ACTIONS GRID ========================= */
+
+.actions-grid{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+
+/* ========================= ACTION CARD ========================= */
+
+.action-card{
+    background: #ffffff;
+
+    padding: 40px 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+}
+
+.action-card:hover{
+    transform: translateY(-6px);
+
+    background: #16a34a;
+}
+
+.action-card:hover i,
+.action-card:hover h3{
+    color: #ffffff;
+}
+
+.action-card i{
+    font-size: 36px;
+
+    color: #16a34a;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+
+.action-card h3{
+    font-size: 24px;
+
+    transition: 0.3s ease;
+}
+
+
+
+/* ========================= DARK MODE ========================= */
+
+body.dark-mode{
+    background: #0f172a;
+}
+
+body.dark-mode .sidebar,
+body.dark-mode .search-box,
+body.dark-mode .profile-box,
+body.dark-mode .header-btn,
+body.dark-mode .notification-btn,
+body.dark-mode .stat-card,
+body.dark-mode .action-card{
+    background: #111827;
+
+    color: #ffffff;
+}
+
+body.dark-mode .sidebar{
+    border-color: #1f2937;
+}
+
+body.dark-mode .sidebar-bottom{
+    border-color: #1f2937;
+}
+
+body.dark-mode .header-left h1,
+body.dark-mode .sidebar-bottom h4,
+body.dark-mode .stat-card h3,
+body.dark-mode .action-card h3{
+    color: #ffffff;
+}
+
+body.dark-mode .search-box input{
+    color: #ffffff;
+}
+
+body.dark-mode .sidebar-menu a{
+    color: #d1d5db;
+}
+
+body.dark-mode .sidebar-menu a.active{
+    color: #ffffff;
+}
+
+
+
+/* ========================= RESPONSIVE ========================= */
+
+@media(max-width: 1200px){
+
+    .dashboard-hero{
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media(max-width: 991px){
+
+    .sidebar{
+        width: 100%;
+        height: auto;
+
+        position: relative;
+    }
+
+    .main-content{
+        margin-left: 0;
+    }
+
+    .top-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-right{
+        flex-wrap: wrap;
+    }
+
+    .search-box{
+        min-width: 100%;
+    }
+
+}
+
+
+
+@media(max-width: 768px){
+
+    .main-content{
+        padding: 20px;
+    }
+
+    .dashboard-hero{
+        padding: 30px;
+    }
+
+    .hero-content h2{
+        font-size: 38px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
+
+    .stats-grid,
+    .actions-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .header-left h1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* ========================= SECTION TITLE ========================= */
+
+.dashboard-section-title{
+    margin-bottom: 30px;
+}
+
+.dashboard-section-title span{
+    color: #16a34a;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    font-size: 14px;
+}
+
+.dashboard-section-title h2{
+    font-size: 34px;
+
+    margin-top: 10px;
+
+    color: #111827;
+}
+
+
+
+/* ========================= RECENT BOOKINGS ========================= */
+
+.recent-bookings{
+    margin-top: 50px;
+
+    margin-bottom: 50px;
+}
+
+
+
+/* ========================= BOOKINGS TABLE ========================= */
+
+.bookings-table{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+
+/* ========================= BOOKING ITEM ========================= */
+
+.booking-item{
+    background: #ffffff;
+
+    padding: 22px 24px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    transition: 0.3s ease;
+}
+
+.booking-item:hover{
+    transform: translateY(-4px);
+}
+
+
+
+/* ========================= BOOKING USER ========================= */
+
+.booking-user{
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+.booking-user img{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.booking-user h4{
+    margin-bottom: 6px;
+
+    font-size: 18px;
+}
+
+.booking-user p{
+    color: #6b7280;
+}
+
+
+
+/* ========================= BOOKING DATE ========================= */
+
+.booking-date{
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+
+
+/* ========================= STATUS ========================= */
+
+.status{
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.completed{
+    background: #dcfce7;
+
+    color: #16a34a;
+}
+
+.pending{
+    background: #fef3c7;
+
+    color: #d97706;
+}
+
+.ongoing{
+    background: #dbeafe;
+
+    color: #2563eb;
+}
+
+
+
+/* ========================= ECO IMPACT ========================= */
+
+.eco-impact{
+    margin-bottom: 50px;
+}
+
+
+
+/* ========================= ECO GRID ========================= */
+
+.eco-grid{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+
+/* ========================= ECO CARD ========================= */
+
+.eco-card{
+    background: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.eco-card:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* ========================= ECO ICON ========================= */
+
+.eco-card i{
+    font-size: 38px;
+
+    color: #16a34a;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* ========================= ECO CONTENT ========================= */
+
+.eco-card h3{
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+.eco-card p{
+    color: #6b7280;
+}
+
+
+
+/* ========================= DARK MODE ========================= */
+
+body.dark-mode .booking-item,
+body.dark-mode .eco-card{
+    background: #111827;
+}
+
+body.dark-mode .dashboard-section-title h2,
+body.dark-mode .booking-user h4,
+body.dark-mode .eco-card h3{
+    color: #ffffff;
+}
+
+body.dark-mode .booking-user p,
+body.dark-mode .booking-date,
+body.dark-mode .eco-card p{
+    color: #9ca3af;
+}
+
+
+
+/* ========================= RESPONSIVE ========================= */
+
+@media(max-width: 991px){
+
+    .eco-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-item{
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+
+@media(max-width: 768px){
+
+    .eco-grid{
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================= META ========================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSpark Dashboard</title>
+
+
+
+    <!-- ========================= GOOGLE FONTS ========================= -->
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+
+    <!-- ========================= FONT AWESOME ========================= -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <!-- ========================= DASHBOARD CSS ========================= -->
+
+    <link rel="stylesheet"href="./dashboard.css">
+
+
+
+    <!-- ========================= GLOBAL SCRIPT ========================= -->
+
+    <script src="../js/script.js" defer></script>
+    <script src="./dashboard.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- ========================= START: DASHBOARD WRAPPER ========================= -->
+
+    <div class="dashboard-wrapper">
+
+
+
+        <!-- ========================= START: SIDEBAR ========================= -->
+
+        <aside class="sidebar">
+
+
+
+            <!-- ========================= START: SIDEBAR LOGO ========================= -->
+
+            <div class="sidebar-logo">
+
+                <a href="../Homepage-1/homepage.html">
+
+                    <div class="logo-icon">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                    </div>
+
+                    <span>
+                        EcoSpark
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- ========================= END: SIDEBAR LOGO ========================= -->
+
+
+
+
+
+            <!-- ========================= START: SIDEBAR MENU ========================= -->
+
+            <ul class="sidebar-menu">
+
+
+
+                <li>
+
+                    <a href="#"
+                    class="active">
+
+                        <i class="fa-solid fa-grid-2"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        My Bookings
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        Payments
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        Notifications
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Profile
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="#">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        Settings
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="../Homepage-1/homepage.html"
+                    class="logout-link">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <!-- ========================= END: SIDEBAR MENU ========================= -->
+
+
+
+
+
+            <!-- ========================= START: SIDEBAR BOTTOM ========================= -->
+
+            <div class="sidebar-bottom">
+
+                <h4>
+                    Eco-Friendly Cleaning Panel
+                </h4>
+
+                <p>
+                    Safe • Modern • Sustainable
+                </p>
+
+            </div>
+
+            <!-- ========================= END: SIDEBAR BOTTOM ========================= -->
+
+
+
+        </aside>
+
+        <!-- ========================= END: SIDEBAR ========================= -->
+
+
+
+
+
+        <!-- ========================= START: MAIN CONTENT ========================= -->
+
+        <main class="main-content">
+
+
+
+            <!-- ========================= START: TOP HEADER ========================= -->
+
+            <header class="top-header">
+
+
+
+                <!-- ========================= HEADER LEFT ========================= -->
+
+                <div class="header-left">
+
+                    <h1>
+
+                        Dashboard
+
+                    </h1>
+
+                </div>
+
+
+
+
+
+                <!-- ========================= HEADER RIGHT ========================= -->
+
+                <div class="header-right">
+
+
+
+                    <!-- ========================= SEARCH BOX ========================= -->
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="text"
+                        placeholder="Search here...">
+
+                    </div>
+
+
+
+
+
+                    <!-- ========================= NOTIFICATION ========================= -->
+
+                    <button class="notification-btn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+
+
+
+
+                    <!-- ========================= RTL BUTTON ========================= -->
+
+                    <button id="rtlToggle"
+                    class="header-btn">
+
+                        RTL
+
+                    </button>
+
+
+
+
+
+                    <!-- ========================= THEME BUTTON ========================= -->
+
+                    <button id="themeToggle"
+                    class="header-btn">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+
+
+
+                    <!-- ========================= PROFILE BOX ========================= -->
+
+                    <div class="profile-box">
+
+                        <img src="https://i.pravatar.cc/100"
+                        alt="Profile">
+
+                        <div>
+
+                            <h4>
+                                Sasi
+                            </h4>
+
+                            <span>
+                                Premium User
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- ========================= END: TOP HEADER ========================= -->
+
+
+
+
+
+            <!-- ========================= START: HERO SECTION ========================= -->
+
+            <section class="dashboard-hero">
+
+
+
+                <!-- ========================= HERO CONTENT ========================= -->
+
+                <div class="hero-content">
+
+                    <span>
+                        Eco-Friendly Cleaning Dashboard
+                    </span>
+
+                    <h2>
+                        Smart Cleaning Solutions
+                        For Modern Living
+                    </h2>
+
+                    <p>
+                        Manage bookings, eco services,
+                        schedules, and premium cleaning
+                        plans from one dashboard.
+                    </p>
+
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#">
+                            Book Service
+                        </a>
+
+                        <a href="#"
+                        class="secondary-btn">
+
+                            Explore Plans
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- ========================= HERO IMAGE ========================= -->
+
+                <div class="hero-image">
+
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
+                    alt="Hero Image">
+
+                </div>
+
+            </section>
+
+            <!-- ========================= END: HERO SECTION ========================= -->
+
+
+
+
+
+            <!-- ========================= START: STATS SECTION ========================= -->
+
+            <section class="stats-grid">
+
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <h3>
+                        24
+                    </h3>
+
+                    <p>
+                        Active Bookings
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>
+                        120
+                    </h3>
+
+                    <p>
+                        Eco Points
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>
+                        18h
+                    </h3>
+
+                    <p>
+                        Time Saved
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>
+                        4.9
+                    </h3>
+
+                    <p>
+                        User Rating
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ========================= END: STATS SECTION ========================= -->
+
+
+
+
+
+            <!-- ========================= START: QUICK ACTIONS ========================= -->
+
+            <section class="actions-grid">
+
+
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    <h3>
+                        Book Cleaning
+                    </h3>
+
+                </div>
+
+
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>
+                        Track Service
+                    </h3>
+
+                </div>
+
+
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h3>
+                        Contact Support
+                    </h3>
+
+                </div>
+
+            </section>
+
+            <!-- ========================= END: QUICK ACTIONS ========================= -->
+
+    <!-- ========================= START: RECENT BOOKINGS SECTION ========================= -->
+
+<section class="recent-bookings">
+
+
+
+    <!-- ========================= SECTION TITLE ========================= -->
+
+    <div class="dashboard-section-title">
+
+        <span>
+            BOOKINGS
+        </span>
+
+        <h2>
+            Recent Bookings
+        </h2>
+
+    </div>
+
+
+
+
+    <!-- ========================= BOOKINGS TABLE ========================= -->
+
+    <div class="bookings-table">
+
+
+
+        <!-- ========================= BOOKING ITEM ========================= -->
+
+        <div class="booking-item">
+
+            <div class="booking-user">
+
+                <img src="https://i.pravatar.cc/100?img=1"
+                alt="User">
+
+                <div>
+
+                    <h4>
+                        Priya Sharma
+                    </h4>
+
+                    <p>
+                        Deep Cleaning
+                    </p>
+
+                </div>
+
+            </div>
+
+            <span class="booking-date">
+                May 14
+            </span>
+
+            <span class="status completed">
+                Completed
+            </span>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= BOOKING ITEM ========================= -->
+
+        <div class="booking-item">
+
+            <div class="booking-user">
+
+                <img src="https://i.pravatar.cc/100?img=2"
+                alt="User">
+
+                <div>
+
+                    <h4>
+                        Rahul Verma
+                    </h4>
+
+                    <p>
+                        Kitchen Cleaning
+                    </p>
+
+                </div>
+
+            </div>
+
+            <span class="booking-date">
+                May 15
+            </span>
+
+            <span class="status pending">
+                Pending
+            </span>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= BOOKING ITEM ========================= -->
+
+        <div class="booking-item">
+
+            <div class="booking-user">
+
+                <img src="https://i.pravatar.cc/100?img=3"
+                alt="User">
+
+                <div>
+
+                    <h4>
+                        Sneha Reddy
+                    </h4>
+
+                    <p>
+                        Bathroom Care
+                    </p>
+
+                </div>
+
+            </div>
+
+            <span class="booking-date">
+                May 16
+            </span>
+
+            <span class="status ongoing">
+                Ongoing
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= END: RECENT BOOKINGS SECTION ========================= -->
+
+
+
+
+
+<!-- ========================= START: ECO IMPACT SECTION ========================= -->
+
+<section class="eco-impact">
+
+
+
+    <!-- ========================= SECTION TITLE ========================= -->
+
+    <div class="dashboard-section-title">
+
+        <span>
+            ECO IMPACT
+        </span>
+
+        <h2>
+            Sustainability Overview
+        </h2>
+
+    </div>
+
+
+
+
+
+    <!-- ========================= ECO GRID ========================= -->
+
+    <div class="eco-grid">
+
+
+
+        <!-- ========================= ECO CARD ========================= -->
+
+        <div class="eco-card">
+
+            <i class="fa-solid fa-tree"></i>
+
+            <h3>
+                128
+            </h3>
+
+            <p>
+                Trees Saved
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= ECO CARD ========================= -->
+
+        <div class="eco-card">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <h3>
+                2450L
+            </h3>
+
+            <p>
+                Water Saved
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= ECO CARD ========================= -->
+
+        <div class="eco-card">
+
+            <i class="fa-solid fa-recycle"></i>
+
+            <h3>
+                310kg
+            </h3>
+
+            <p>
+                Plastic Reduced
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= ECO CARD ========================= -->
+
+        <div class="eco-card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>
+                92%
+            </h3>
+
+            <p>
+                Energy Efficient
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= END: ECO IMPACT SECTION ========================= -->
+
+        </main>
+
+        <!-- ========================= END: MAIN CONTENT ========================= -->
+
+
+
+    </div>
+
+    <!-- ========================= END: DASHBOARD WRAPPER ========================= -->
+
+
+
+</body>
+
+</html>

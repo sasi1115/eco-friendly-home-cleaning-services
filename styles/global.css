@@ -180,6 +180,15 @@ body.dark-mode header{
             justify-content: space-between;
             padding: 18px 0;
         }
+    nav a i{
+
+    font-size: 0.65rem;
+
+    margin-left: 5px;
+
+    vertical-align: middle;
+
+}
 
         .logo {
             display: flex;

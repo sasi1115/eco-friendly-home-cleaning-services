@@ -1,0 +1,565 @@
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+    135deg,
+    #081c15,
+    #1b4332,
+    #2d6a4f);
+
+    transition: 0.4s ease;
+
+    position: relative;
+}
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark{
+
+    background:
+    linear-gradient(
+    135deg,
+    #020303,
+    #08110d,
+    #0f1c17);
+}
+
+/* =========================================================
+   FLOATING CIRCLES
+========================================================= */
+
+.circle{
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(10px);
+
+    animation: float 7s ease-in-out infinite;
+}
+
+.circle1{
+
+    width: 220px;
+    height: 220px;
+
+    top: -70px;
+    left: -60px;
+}
+
+.circle2{
+
+    width: 170px;
+    height: 170px;
+
+    bottom: -50px;
+    right: -40px;
+
+    animation-delay: 2s;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-18px);
+    }
+
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.signup-container{
+
+    width: 390px;
+
+    padding: 22px 22px;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.10);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+
+    animation: fadeUp 1s ease;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+body.dark .signup-container{
+
+    background: rgba(16,16,16,0.55);
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================================
+   TOP CONTROLS
+========================================================= */
+
+.top-controls{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.theme-btn,
+.rtl-btn{
+
+    border: none;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    backdrop-filter: blur(10px);
+}
+
+.theme-btn{
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+}
+
+.rtl-btn{
+
+    width: 60px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+}
+
+.theme-btn:hover,
+.rtl-btn:hover{
+
+    background: rgba(255,255,255,0.20);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-box{
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 4px;
+}
+
+.logo{
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background:
+    linear-gradient(
+    135deg,
+    #38b000,
+    #70e000);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow: 0 0 25px rgba(112,224,0,0.40);
+
+    animation: rotateLogo 8s linear infinite;
+}
+.home-link{
+
+    text-decoration: none;
+
+    display: block;
+}
+
+@keyframes rotateLogo{
+
+    0%{
+        transform: rotate(0deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotate(180deg) translateY(-5px);
+    }
+
+    100%{
+        transform: rotate(360deg) translateY(0px);
+    }
+
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.brand{
+
+    text-align: center;
+
+    color: #70e000;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.heading{
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.subtitle{
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.input-group{
+
+    margin-bottom: 10px;  
+}
+
+.input-group label{
+
+    display: block;
+
+    color: white;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box input{
+
+    width: 100%;
+
+    padding: 13px 46px 13px 15px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.input-box input::placeholder{
+
+    color: rgba(255,255,255,0.45);
+}
+
+.input-box input:focus{
+
+    border-color: #70e000;
+
+    box-shadow: 0 0 15px rgba(112,224,0,0.22);
+}
+
+.input-box i{
+
+    position: absolute;
+
+    right: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: rgba(255,255,255,0.70);
+}
+
+.toggle-password{
+    cursor: pointer;
+}
+
+/* =========================================================
+   PASSWORD STRENGTH
+========================================================= */
+
+.strength-box{
+
+    margin-top: 8px;
+}
+
+.strength-bar{
+
+    width: 100%;
+    height: 6px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.12);
+
+    overflow: hidden;
+}
+
+.strength-fill{
+
+    height: 100%;
+    width: 0%;
+
+    border-radius: 20px;
+
+    transition: 0.4s ease;
+
+    background: red;
+}
+
+.strength-text{
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: rgba(255,255,255,0.75);
+}
+
+/* =========================================================
+   MATCH MESSAGE
+========================================================= */
+
+.match-message{
+
+    font-size: 12px;
+
+    margin-top: 6px;
+
+    color: #70e000;
+
+    display: none;
+}
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.terms{
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 4px;
+    margin-bottom: 16px;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.signup-btn{
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #38b000,
+    #70e000);
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.signup-btn:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(112,224,0,0.30);
+}
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.spinner{
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255,255,255,0.35);
+
+    border-top: 3px solid white;
+
+    animation: spin 1s linear infinite;
+
+    display: none;
+
+    margin: auto;
+}
+
+@keyframes spin{
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 13px;
+}
+
+.footer a{
+
+    color: #70e000;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:500px){
+
+    .signup-container{
+
+        width: 92%;
+
+        padding: 22px;
+    }
+
+}
+

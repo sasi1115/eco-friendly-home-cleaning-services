@@ -18,15 +18,19 @@ function initializeGlobalFunctions() {
 
                 const icon = btn.querySelector("i");
 
-                if(document.body.classList.contains("dark-mode")) {
+                if(icon){
 
-                    icon.classList.remove("fa-moon");
-                    icon.classList.add("fa-sun");
+                    if(document.body.classList.contains("dark-mode")) {
 
-                } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
 
-                    icon.classList.remove("fa-sun");
-                    icon.classList.add("fa-moon");
+                    } else {
+
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+
+                    }
 
                 }
 
@@ -71,6 +75,8 @@ function initializeGlobalFunctions() {
 // ========================= END: GLOBAL FUNCTIONS =========================
 
 
+
+
 // ========================= START: REVEAL ANIMATION =========================
 
 const reveals = document.querySelectorAll(".reveal");
@@ -102,16 +108,53 @@ revealOnScroll();
 
 // ========================= END: REVEAL ANIMATION =========================
 
-// ========================= FAQ ACCORDION =========================
+
+
+
+/* ========================= FAQ ACCORDION ========================= */
 
 const faqItems = document.querySelectorAll(".faq-item");
 
-faqItems.forEach(item => {
+if(faqItems.length > 0){
 
-    item.addEventListener("click", () => {
+    faqItems.forEach(item => {
 
-        item.classList.toggle("active");
+        const question = item.querySelector(".faq-question");
+
+        if(question){
+
+            question.addEventListener("click", () => {
+
+                const answer = item.querySelector(".faq-answer");
+
+                item.classList.toggle("active");
+
+                if(item.classList.contains("active")){
+
+                    answer.style.maxHeight =
+                    answer.scrollHeight + "px";
+
+                }else{
+
+                    answer.style.maxHeight = null;
+
+                }
+
+            });
+
+        }
 
     });
+
+}
+
+
+
+
+/* ========================= INITIALIZE FUNCTIONS ========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    initializeGlobalFunctions();
 
 });

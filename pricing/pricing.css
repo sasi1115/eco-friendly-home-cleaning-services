@@ -1,0 +1,1573 @@
+/* =========================================================
+   GOOGLE FONT
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --primary-color: #16a34a;
+    --primary-dark: #15803d;
+
+    --white-color: #ffffff;
+
+    --text-dark: #111827;
+    --text-light: #6b7280;
+
+    --bg-light: #f6f9f7;
+
+    --border-color: #e5e7eb;
+
+    --shadow-light:
+    0 10px 40px rgba(0,0,0,0.06);
+
+    --shadow-hover:
+    0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+
+
+
+
+/* =========================================================
+   HTML
+========================================================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body{
+    font-family: 'Outfit', sans-serif;
+
+    background: var(--bg-light);
+
+    color: var(--text-dark);
+
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+/* =========================================================
+   LINK
+========================================================= */
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button{
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+section{
+    position: relative;
+}
+
+
+
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #dcfce7;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading{
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: auto auto 70px;
+}
+
+.section-heading span{
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2{
+    font-size: 54px;
+
+    margin: 20px 0;
+
+    line-height: 1.2;
+}
+
+.section-heading p{
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.pricing-hero{
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 140px 20px 100px;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)
+    ),
+
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.pricing-overlay{
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(22,163,74,0.35),
+    rgba(0,0,0,0.45)
+    );
+
+    z-index: 1;
+}
+
+
+
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.pricing-hero-content{
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.pricing-hero-content h1{
+    font-size: 74px;
+
+    line-height: 1.1;
+
+    color: #ffffff;
+
+    margin-bottom: 24px;
+
+    font-weight: 800;
+}
+
+
+
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.pricing-hero-content p{
+    max-width: 760px;
+
+    color: #f0fdf4;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    margin-bottom: 40px;
+}
+
+
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.pricing-breadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #dcfce7;
+
+    margin-bottom: 28px;
+
+    font-size: 15px;
+}
+
+
+
+
+
+/* =========================================================
+   HERO TAG
+========================================================= */
+
+.pricing-tag{
+    padding: 12px 22px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--white-color);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.pricing-hero-content h1{
+    font-size: 78px;
+
+    line-height: 1.1;
+
+    color: var(--white-color);
+
+    margin-bottom: 30px;
+
+    font-weight: 800;
+}
+
+
+
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.pricing-hero-content p{
+    max-width: 760px;
+
+    color: #f0fdf4;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    margin-bottom: 45px;
+}
+
+
+
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.hero-primary-btn,
+.hero-secondary-btn{
+    padding: 18px 34px;
+
+    border-radius: 16px;
+
+    font-weight: 700;
+
+    transition: 0.4s ease;
+}
+
+.hero-primary-btn{
+    background: var(--primary-color);
+
+    color: var(--white-color);
+}
+
+.hero-primary-btn:hover{
+    background: var(--primary-dark);
+
+    transform: translateY(-5px);
+}
+
+.hero-secondary-btn{
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--white-color);
+}
+
+.hero-secondary-btn:hover{
+    transform: translateY(-5px);
+
+    background: rgba(255,255,255,0.2);
+}
+
+
+
+
+
+/* =========================================================
+   HERO STATS
+========================================================= */
+
+.hero-stats{
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+
+
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+.hero-stat-card{
+    min-width: 240px;
+
+    padding: 30px;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.2);
+}
+
+.hero-stat-card h3{
+    font-size: 40px;
+
+    color: var(--white-color);
+
+    margin-bottom: 10px;
+}
+
+.hero-stat-card p{
+    color: #dcfce7;
+
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+
+
+
+/* =========================================================
+   PRICING SECTION
+========================================================= */
+
+.pricing-section{
+    padding: 120px 40px;
+}
+
+
+
+
+
+/* =========================================================
+   PRICING GRID
+========================================================= */
+
+.pricing-grid{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   PRICING CARD
+========================================================= */
+
+.pricing-card{
+    position: relative;
+
+    background: var(--white-color);
+
+    border-radius: 34px;
+
+    padding: 45px 35px;
+
+    box-shadow: var(--shadow-light);
+
+    transition: 0.4s ease;
+}
+
+.pricing-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-hover);
+}
+
+
+
+
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.featured-card{
+    background:
+    linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+    );
+
+    transform: scale(1.04);
+}
+
+.featured-card h3,
+.featured-card li,
+.featured-card .plan-price{
+    color: var(--white-color);
+}
+
+.featured-card .plan-btn{
+    background: var(--white-color);
+
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* =========================================================
+   POPULAR BADGE
+========================================================= */
+
+.popular-badge{
+    position: absolute;
+
+    top: 24px;
+    right: 24px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: #dcfce7;
+
+    color: var(--primary-color);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* =========================================================
+   PLAN ICON
+========================================================= */
+
+.plan-icon{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 24px;
+
+    background: #dcfce7;
+
+    color: var(--primary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.pricing-card h3{
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* =========================================================
+   PLAN PRICE
+========================================================= */
+
+.plan-price{
+    font-size: 58px;
+
+    color: var(--primary-color);
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.plan-price span{
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+
+
+
+/* =========================================================
+   PLAN LIST
+========================================================= */
+
+.pricing-card ul{
+    margin-bottom: 35px;
+}
+
+.pricing-card li{
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #374151;
+}
+
+
+
+
+
+/* =========================================================
+   PLAN BUTTON
+========================================================= */
+
+.plan-btn{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.plan-btn:hover{
+    transform: translateY(-4px);
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR SECTION
+========================================================= */
+
+.calculator-section{
+    padding: 0 40px 120px;
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR CONTAINER
+========================================================= */
+
+.calculator-container{
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #1f2937
+    );
+
+    border-radius: 40px;
+
+    padding: 70px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 420px;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR CONTENT
+========================================================= */
+
+.calculator-content span{
+    color: #4ade80;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.calculator-content h2{
+    font-size: 56px;
+
+    color: var(--white-color);
+
+    margin: 24px 0;
+}
+
+.calculator-content p{
+    color: #d1d5db;
+
+    line-height: 1.9;
+
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR FEATURES
+========================================================= */
+
+.calculator-features{
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.calculator-features div{
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    color: var(--white-color);
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR CARD
+========================================================= */
+
+.calculator-card{
+    background: var(--white-color);
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.2);
+}
+
+.calculator-card h3{
+    font-size: 28px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+}
+
+.form-group select{
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border-radius: 14px;
+
+    border: 1px solid var(--border-color);
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+
+
+
+/* =========================================================
+   ADDONS
+========================================================= */
+
+.addon-options{
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    margin-bottom: 30px;
+}
+
+.addon-options label{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: 500;
+}
+
+
+
+
+
+/* =========================================================
+   TOTAL BOX
+========================================================= */
+
+.total-box{
+    background: #dcfce7;
+
+    border-radius: 22px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.total-box span{
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--text-light);
+}
+
+.total-box h2{
+    font-size: 42px;
+
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* =========================================================
+   CALCULATOR BUTTON
+========================================================= */
+
+.calculator-btn{
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.calculator-btn:hover{
+    background: var(--primary-dark);
+
+    transform: translateY(-4px);
+}
+
+
+
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services-section{
+    padding: 0 40px 120px;
+}
+
+
+
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+}
+
+
+
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card{
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: var(--white-color);
+
+    box-shadow: var(--shadow-light);
+
+    transition: 0.4s ease;
+}
+
+.service-card:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.service-card img{
+    height: 270px;
+
+    object-fit: cover;
+}
+
+
+
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-content{
+    padding: 30px;
+}
+
+.service-content h3{
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.service-content p{
+    color: var(--text-light);
+
+    line-height: 1.8;
+}
+
+
+
+
+
+/* =========================================================
+   CTA SECTION
+========================================================= */
+
+.pricing-cta{
+    margin: 0 40px 120px;
+
+    padding: 100px 40px;
+
+    border-radius: 40px;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+    );
+
+    color: var(--white-color);
+}
+
+.pricing-cta span{
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.pricing-cta h2{
+    font-size: 60px;
+
+    margin: 25px 0;
+}
+
+.pricing-cta p{
+    max-width: 760px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    font-size: 18px;
+}
+
+
+
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.cta-buttons{
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.cta-primary-btn,
+.cta-secondary-btn{
+    padding: 18px 34px;
+
+    border-radius: 16px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.cta-primary-btn{
+    background: var(--white-color);
+
+    color: var(--primary-color);
+}
+
+.cta-secondary-btn{
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: var(--white-color);
+}
+
+.cta-primary-btn:hover,
+.cta-secondary-btn:hover{
+    transform: translateY(-4px);
+}
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE 1200px
+========================================================= */
+
+@media(max-width:1200px){
+
+    .pricing-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .calculator-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE 768px
+========================================================= */
+
+@media(max-width:768px){
+
+    .pricing-hero-content h1{
+        font-size: 52px;
+    }
+
+    .section-heading h2{
+        font-size: 40px;
+    }
+
+    .pricing-grid,
+    .services-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-section,
+    .calculator-section,
+    .services-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pricing-cta{
+        margin: 0 20px 80px;
+
+        padding: 70px 30px;
+    }
+
+    .pricing-cta h2{
+        font-size: 42px;
+    }
+
+    .hero-buttons,
+    .cta-buttons{
+        flex-direction: column;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn,
+    .cta-primary-btn,
+    .cta-secondary-btn{
+        width: 100%;
+    }
+
+    .featured-card{
+        transform: none;
+    }
+
+    .calculator-container{
+        padding: 40px 25px;
+    }
+
+    .calculator-features{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE 600px
+========================================================= */
+
+@media(max-width:600px){
+
+    .pricing-hero-content h1{
+        font-size: 40px;
+    }
+
+    .pricing-hero-content p{
+        font-size: 16px;
+    }
+
+    .plan-price{
+        font-size: 44px;
+    }
+
+    .pricing-card{
+        padding: 35px 25px;
+    }
+
+    .hero-stat-card{
+        width: 100%;
+    }
+
+    .calculator-content h2{
+        font-size: 40px;
+    }
+
+    .pricing-cta h2{
+        font-size: 36px;
+    }
+
+}
+
+/* =========================================================
+   FAQ SECTION
+========================================================= */
+
+.faq-section{
+    padding: 0 40px 120px;
+}
+
+
+
+
+
+/* =========================================================
+   FAQ CONTAINER
+========================================================= */
+
+.faq-container{
+    max-width: 900px;
+
+    margin: 60px auto 0;
+}
+
+
+
+
+
+/* =========================================================
+   FAQ ITEM
+========================================================= */
+
+.faq-item{
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.05);
+
+    transition: 0.3s ease;
+}
+
+.faq-item:hover{
+    transform: translateY(-4px);
+}
+
+
+
+
+
+/* =========================================================
+   FAQ QUESTION
+========================================================= */
+
+.faq-question{
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 28px 30px;
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+    text-align: left;
+
+    font-family: inherit;
+}
+
+
+
+
+
+/* =========================================================
+   FAQ ICON
+========================================================= */
+
+.faq-question i{
+    color: #16a34a;
+
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* =========================================================
+   FAQ ANSWER
+========================================================= */
+
+.faq-answer{
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+}
+
+
+
+
+
+/* =========================================================
+   FAQ ANSWER TEXT
+========================================================= */
+
+.faq-answer p{
+    padding: 0 30px 30px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+
+
+
+/* =========================================================
+   ACTIVE FAQ
+========================================================= */
+
+.faq-item.active .faq-answer{
+    max-height: 200px;
+}
+
+
+
+
+
+/* =========================================================
+   ACTIVE ICON
+========================================================= */
+
+.faq-item.active .faq-question i{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .faq-item{
+    background: #111827;
+}
+
+body.dark-mode .faq-question{
+    color: #ffffff;
+}
+
+body.dark-mode .faq-answer p{
+    color: #9ca3af;
+}
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:768px){
+
+    .faq-section{
+        padding: 0 20px 80px;
+    }
+
+    .faq-question{
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+    .faq-answer p{
+        padding: 0 24px 24px;
+    }
+
+}
