@@ -1,25 +1,34 @@
+/* =========================================================
+   GOOGLE FONT
+========================================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* =========================================================
-   GLOBAL
+   RESET
 ========================================================= */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
+
+/* =========================================================
+   BODY
+========================================================= */
 
 body{
 
-    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 14px;
+    padding: 12px;
 
     overflow: hidden;
 
@@ -34,11 +43,12 @@ body{
 
     position: relative;
 }
+
 /* =========================================================
    DARK MODE
 ========================================================= */
 
-body.dark{
+body.dark-mode{
 
     background:
     linear-gradient(
@@ -63,23 +73,25 @@ body.dark{
     backdrop-filter: blur(10px);
 
     animation: float 7s ease-in-out infinite;
+
+    z-index: 1;
 }
 
 .circle1{
 
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
 
-    top: -70px;
+    top: -60px;
     left: -60px;
 }
 
 .circle2{
 
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
 
-    bottom: -50px;
+    bottom: -40px;
     right: -40px;
 
     animation-delay: 2s;
@@ -92,22 +104,22 @@ body.dark{
     }
 
     50%{
-        transform: translateY(-18px);
+        transform: translateY(-14px);
     }
-
 }
 
 /* =========================================================
-   CARD
+   SIGNUP CONTAINER
 ========================================================= */
 
 .signup-container{
 
-    width: 390px;
+    width: 100%;
+    max-width: 370px;
 
-    padding: 22px 22px;
+    padding: 14px;
 
-    border-radius: 24px;
+    border-radius: 22px;
 
     background: rgba(255,255,255,0.10);
 
@@ -115,16 +127,18 @@ body.dark{
 
     border: 1px solid rgba(255,255,255,0.12);
 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-
-    animation: fadeUp 1s ease;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
 
     position: relative;
 
     z-index: 10;
+
+    overflow: hidden;
+
+    animation: fadeUp 0.8s ease;
 }
 
-body.dark .signup-container{
+body.dark-mode .signup-container{
 
     background: rgba(16,16,16,0.55);
 }
@@ -140,7 +154,6 @@ body.dark .signup-container{
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 /* =========================================================
@@ -153,9 +166,9 @@ body.dark .signup-container{
     justify-content: flex-end;
     align-items: center;
 
-    gap: 12px;
+    gap: 8px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .theme-btn,
@@ -176,20 +189,22 @@ body.dark .signup-container{
 
 .theme-btn{
 
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
 
     border-radius: 50%;
 
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .rtl-btn{
 
-    width: 60px;
-    height: 42px;
+    width: 54px;
+    height: 36px;
 
-    border-radius: 12px;
+    border-radius: 10px;
+
+    font-size: 12px;
 
     font-weight: 600;
 }
@@ -206,18 +221,19 @@ body.dark .signup-container{
    LOGO
 ========================================================= */
 
-.logo-box{
 
-    display: flex;
-    justify-content: center;
 
-    margin-bottom: 4px;
+.home-link{
+
+    text-decoration: none;
+
+    display: block;
 }
 
 .logo{
 
-    width: 72px;
-    height: 72px;
+    width: 42px;
+    height: 42px;
 
     border-radius: 50%;
 
@@ -233,51 +249,41 @@ body.dark .signup-container{
 
     color: white;
 
-    font-size: 28px;
+    font-size: 16px;
 
-    box-shadow: 0 0 25px rgba(112,224,0,0.40);
-
-    animation: rotateLogo 8s linear infinite;
+    box-shadow: 0 0 16px rgba(112,224,0,0.35);
 }
-.home-link{
+/* =========================================================
+   BRAND ROW
+========================================================= */
 
-    text-decoration: none;
+.brand-row{
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 8px;
 }
 
-@keyframes rotateLogo{
+.brand-text{
 
-    0%{
-        transform: rotate(0deg) translateY(0px);
-    }
+    color: #70e000;
 
-    50%{
-        transform: rotate(180deg) translateY(-5px);
-    }
+    font-size: 24px;
 
-    100%{
-        transform: rotate(360deg) translateY(0px);
-    }
+    font-weight: 700;
 
+    line-height: 1;
 }
 
 /* =========================================================
    TEXT
 ========================================================= */
 
-.brand{
 
-    text-align: center;
-
-    color: #70e000;
-
-    font-size: 26px;
-
-    font-weight: 700;
-
-    margin-bottom: 4px;
-}
 
 .heading{
 
@@ -285,11 +291,11 @@ body.dark .signup-container{
 
     color: white;
 
-    font-size: 21px;
+    font-size: 17px;
 
     font-weight: 600;
 
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .subtitle{
@@ -298,18 +304,20 @@ body.dark .signup-container{
 
     color: rgba(255,255,255,0.72);
 
-    font-size: 13px;
+    font-size: 11px;
 
-    margin-bottom: 18px;
+    line-height: 1.4;
+
+    margin-bottom: 10px;
 }
 
 /* =========================================================
-   INPUTS
+   INPUT GROUP
 ========================================================= */
 
 .input-group{
 
-    margin-bottom: 10px;  
+    margin-bottom: 8px;
 }
 
 .input-group label{
@@ -318,14 +326,19 @@ body.dark .signup-container{
 
     color: white;
 
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 
-    font-size: 14px;
+    font-size: 12px;
 
     font-weight: 500;
 }
 
+/* =========================================================
+   INPUT BOX
+========================================================= */
+
 .input-box{
+
     position: relative;
 }
 
@@ -333,9 +346,11 @@ body.dark .signup-container{
 
     width: 100%;
 
-    padding: 13px 46px 13px 15px;
+    height: 42px;
 
-    border-radius: 14px;
+    padding: 0 42px 0 14px;
+
+    border-radius: 12px;
 
     border: 1px solid rgba(255,255,255,0.12);
 
@@ -344,6 +359,8 @@ body.dark .signup-container{
     color: white;
 
     outline: none;
+
+    font-size: 13px;
 
     transition: 0.3s ease;
 }
@@ -357,22 +374,25 @@ body.dark .signup-container{
 
     border-color: #70e000;
 
-    box-shadow: 0 0 15px rgba(112,224,0,0.22);
+    box-shadow: 0 0 10px rgba(112,224,0,0.20);
 }
 
 .input-box i{
 
     position: absolute;
 
-    right: 16px;
+    right: 14px;
     top: 50%;
 
     transform: translateY(-50%);
 
     color: rgba(255,255,255,0.70);
+
+    font-size: 13px;
 }
 
 .toggle-password{
+
     cursor: pointer;
 }
 
@@ -382,13 +402,13 @@ body.dark .signup-container{
 
 .strength-box{
 
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .strength-bar{
 
     width: 100%;
-    height: 6px;
+    height: 4px;
 
     border-radius: 20px;
 
@@ -411,9 +431,9 @@ body.dark .signup-container{
 
 .strength-text{
 
-    margin-top: 5px;
+    margin-top: 4px;
 
-    font-size: 12px;
+    font-size: 10px;
 
     color: rgba(255,255,255,0.75);
 }
@@ -424,9 +444,9 @@ body.dark .signup-container{
 
 .match-message{
 
-    font-size: 12px;
+    font-size: 10px;
 
-    margin-top: 6px;
+    margin-top: 4px;
 
     color: #70e000;
 
@@ -434,22 +454,47 @@ body.dark .signup-container{
 }
 
 /* =========================================================
-   CHECKBOX
+   OPTIONS ROW
 ========================================================= */
 
-.terms{
+.options-row{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 6px;
+    margin-bottom: 10px;
+
+    gap: 10px;
+}
+
+.remember-me{
 
     display: flex;
     align-items: center;
 
-    gap: 8px;
-
-    margin-top: 4px;
-    margin-bottom: 16px;
+    gap: 6px;
 
     color: white;
 
-    font-size: 13px;
+    font-size: 11px;
+}
+
+.remember-me input{
+
+    accent-color: #70e000;
+}
+
+.forgot-password{
+
+    color: #70e000;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 500;
 }
 
 /* =========================================================
@@ -460,11 +505,11 @@ body.dark .signup-container{
 
     width: 100%;
 
-    padding: 13px;
+    height: 42px;
 
     border: none;
 
-    border-radius: 15px;
+    border-radius: 12px;
 
     background:
     linear-gradient(
@@ -474,7 +519,7 @@ body.dark .signup-container{
 
     color: white;
 
-    font-size: 15px;
+    font-size: 14px;
 
     font-weight: 600;
 
@@ -485,9 +530,9 @@ body.dark .signup-container{
 
 .signup-btn:hover{
 
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
-    box-shadow: 0 10px 25px rgba(112,224,0,0.30);
+    box-shadow: 0 8px 20px rgba(112,224,0,0.28);
 }
 
 /* =========================================================
@@ -496,8 +541,8 @@ body.dark .signup-container{
 
 .spinner{
 
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 
     border-radius: 50%;
 
@@ -517,7 +562,79 @@ body.dark .signup-container{
     100%{
         transform: rotate(360deg);
     }
+}
 
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider{
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 12px 0;
+
+    color: rgba(255,255,255,0.70);
+
+    font-size: 11px;
+}
+
+.divider::before,
+.divider::after{
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.12);
+}
+
+/* =========================================================
+   SOCIAL BUTTONS
+========================================================= */
+
+.social-login{
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.social-btn{
+
+    flex: 1;
+
+    height: 40px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    font-size: 13px;
+}
+
+.social-btn:hover{
+
+    background: rgba(255,255,255,0.14);
 }
 
 /* =========================================================
@@ -528,11 +645,13 @@ body.dark .signup-container{
 
     text-align: center;
 
-    margin-top: 15px;
+    margin-top: 10px;
 
     color: rgba(255,255,255,0.72);
 
-    font-size: 13px;
+    font-size: 11px;
+
+    line-height: 1.3;
 }
 
 .footer a{
@@ -545,21 +664,52 @@ body.dark .signup-container{
 }
 
 .footer a:hover{
+
     text-decoration: underline;
 }
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
+========================================================= */
+
+@media(max-width:768px){
+
+    body{
+
+        padding: 14px;
+    }
+
+    .signup-container{
+
+        max-width: 380px;
+    }
+}
+
+/* =========================================================
+   MOBILE
 ========================================================= */
 
 @media(max-width:500px){
 
-    .signup-container{
+    body{
 
-        width: 92%;
+        padding: 10px;
 
-        padding: 22px;
+        overflow-y: auto;
     }
 
-}
+    .signup-container{
 
+        padding: 14px;
+    }
+
+    .social-login{
+
+        flex-direction: column;
+    }
+
+    .social-btn{
+
+        width: 100%;
+    }
+}
